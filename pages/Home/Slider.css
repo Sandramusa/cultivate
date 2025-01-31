@@ -1,0 +1,168 @@
+/* Slider principal */
+.home-slider {
+    width: 100%;
+    height: 89vh;
+    position: relative;
+    overflow: hidden;
+}
+
+/* Imagen de fondo */
+.slider-slide {
+    width: 100%;
+    height: 100%;
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    padding-left: 60px;
+    color: white;
+    position: relative;
+}
+
+/* Contenido del slider */
+.slider-content {
+    max-width: 700px;
+    width: 100%;
+}
+.slider-sub-title {
+    max-width: 535px;
+    width: 100%;
+}
+/* Título del slider */
+.slider-content h1 {
+    font-size: 3rem;
+    font-weight: bold;
+    margin-bottom: 1rem;
+    line-height: 1.2;
+    text-transform: uppercase;
+}
+
+/* Texto resaltado */
+.slider-content h1 span {
+    color: #5D253A;
+    background-color: #A7C0FC;
+    padding: 0 10px;
+}
+
+/* Descripción */
+.slider-content p {
+    font-size: .9rem;
+    margin-bottom: 2rem;
+    line-height: 1.5;
+    font-family: 'Lato';
+}
+
+/* Botón de acción */
+.slider-button {
+    display: inline-flex;
+    align-items: center;
+    gap: 10px;
+    padding: 0.8rem 1.5rem;
+    font-size: 1rem;
+    font-weight: bold;
+    background-color: #e74c3c;
+    border: none;
+    color: white;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+    text-transform: uppercase;
+}
+
+.slider-button:hover {
+    background-color: #c0392b;
+    transform: scale(1.05);
+}
+
+/* Controles de navegación */
+.slider-controls {
+    position: absolute;
+    bottom: 15px!important;
+    right: 20px;
+    display: flex;
+    gap: 10px;
+    z-index: 10;
+}
+
+.slider-btn {
+    width: 40px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #ffffff;
+    border: none;
+    color: #004d1a;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.slider-btn:hover {
+    background-color: #f0f0f0;
+    transform: scale(1.05);
+}
+
+.slider-btn svg {
+    width: 20px;
+    height: 20px;
+}
+
+/* 📱 Responsividad para pantallas pequeñas */
+@media (max-width: 1024px) {
+    .slider-content {
+        max-width: 90%;
+        text-align: left;
+        padding: 20px;
+    }
+
+    .slider-slide {
+        padding-left: 0;
+        justify-content: left;
+        text-align: left;
+    }
+
+    .slider-content h1 {
+        font-size: 2rem;
+    }
+
+    .slider-content p {
+        font-size: 0.8rem;
+    }
+
+    .slider-button {
+        font-size: 0.9rem;
+        padding: 0.6rem 1.2rem;
+    }
+}
+
+/* Pantallas muy pequeñas (teléfonos) */
+@media (max-width: 600px) {
+    .slider-content h1 {
+        font-size: 1.8rem;
+    }
+
+    .slider-content p {
+        font-size: 0.75rem;
+    }
+
+    .slider-button {
+        font-size: 0.85rem;
+        padding: 0.5rem 1rem;
+    }
+
+    .slider-controls {
+        bottom: 10px;
+        right: 10px;
+    }
+
+    .slider-btn {
+        width: 35px;
+        height: 35px;
+    }
+}
+
+.slider-title-h1{
+    font-family: 'Inter', serif !important;
+}
+
