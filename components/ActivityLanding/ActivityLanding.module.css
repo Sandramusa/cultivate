@@ -1,0 +1,91 @@
+.activityContent {
+    color: #333;
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+/* Sección del autor */
+.header {
+    text-align: left;
+    margin-bottom: 20px;
+}
+
+.authorContainer {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.authorImage {
+    width: 40px;
+    height: 40px;
+}
+
+.authorName {
+    font-size: 16px;
+    font-weight: bold;
+    color: #1D4D2C;
+}
+
+.postDate {
+    font-size: 14px;
+    color: #666;
+}
+
+/* Título */
+.title {
+    font-size: 28px;
+    font-weight: bold;
+    margin-top: 10px;
+    text-align: left;
+}
+
+/* Imagen */
+.imageContainer {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.activityImage {
+    width: 100%;
+    max-width: 700px;
+    border-radius: 8px;
+}
+
+/* Contenido */
+.content {
+    text-align: left;
+}
+
+.sectionTitle {
+    font-size: 22px;
+    font-weight: bold;
+    color: #1D4D2C;
+    margin-top: 20px;
+}
+
+.text {
+    font-size: 16px;
+    line-height: 1.6;
+}
+
+/* Botón */
+.buttonContainer {
+    text-align: center;
+    margin-top: 30px;
+}
+
+.inscribeButton {
+    background-color: #1D4D2C;
+    color: white;
+    padding: 12px 20px;
+    font-size: 16px;
+    border: none;
+    cursor: pointer;
+    transition: background 0.3s;
+}
+
+.inscribeButton:hover {
+    background-color: #2E7031;
+}

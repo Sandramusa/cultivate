@@ -1,0 +1,67 @@
+.newsContent {
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+/* Información del autor */
+.header {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    margin-bottom: 20px;
+}
+
+.authorContainer {
+    display: flex;
+    align-items: center;
+}
+
+.authorImage {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    margin-right: 10px;
+}
+
+.authorName {
+    font-weight: bold;
+}
+
+.postDate {
+    font-size: 14px;
+    color: gray;
+}
+
+/* Imagen principal */
+.newsImage {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+    margin-bottom: 20px;
+}
+
+/* Contenido */
+.content {
+    margin-top: 20px;
+}
+
+.sectionTitle {
+    font-size: 1.5rem;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.text {
+    font-size: 1rem;
+    line-height: 1.5;
+    margin-bottom: 15px;
+}
+
+.list {
+    padding-left: 20px;
+}
+
+.list li {
+    margin-bottom: 10px;
+}

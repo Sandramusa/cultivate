@@ -1,0 +1,28 @@
+.card{
+    border-radius: 2rem!important;
+
+}
+
+.badge-card{
+    top: auto;
+    right: auto;
+    margin-left: 1rem;
+}
+
+.cart-text{
+    margin-left: 1rem;
+}
+
+.cart-text-list{
+    margin-left: 0.2rem;
+}
+
+.fs-8{
+    font-size: 0.8rem;
+}
+.fs-9{
+    font-size: 0.7rem;
+}
+.custom-green {
+     color: #01401C; /* Verde oficial de Bootstrap */
+ }

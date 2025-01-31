@@ -1,0 +1,135 @@
+.contact-section-form{
+    background-color: #F2F2E8;
+}
+
+.contact-wrapper {
+    width: 100vw;
+    justify-content: center;
+    align-items: center;
+    padding: 5rem 0;
+}
+
+.contact-background {
+    border-radius: 25px;
+    overflow: hidden;
+}
+
+.contact-info {
+    background-color: #5d253a;
+    color: white;
+    padding: 4rem;
+    border-radius: 25px 0 0 25px;
+    position: relative;
+    overflow: hidden;
+}
+.contact-shadow-lg{
+    box-shadow: none;
+}
+.contact-info::before {
+    content: '';
+    position: absolute;
+    top: 20%;
+    left: 90%;
+    width: 185px;
+    height: 300px;
+    background-image: url('../../assets/images/ContactForm/shape.png');
+    background-repeat: no-repeat;
+    background-size: contain;
+    opacity: 1;
+    transform: translate(-50%, -50%);
+    pointer-events: none;
+}
+
+/* Aumenta la especificidad del selector de bg-white */
+.contact-wrapper .bg-white {
+    border-radius: 0 25px 25px 0;
+    padding: 4rem;
+}
+
+.contact-form input::placeholder,
+.contact-form textarea::placeholder {
+    color: rgba(0, 0, 0, 0.4);
+}
+
+/* Botón */
+.contact-form button.btn-orange {
+    background: #F25C5C;
+    color: white;
+    border: none;
+    border-radius: 0px;
+    font-weight: 500;
+    padding: 9px 20px;
+    font-size: 0.9rem;
+    display: inline-block;
+    text-align: center;
+    cursor: pointer;
+}
+
+
+.right-arrow {
+    font-size: 1.3rem;
+}
+
+.icon-circle {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background-color: rgba(255, 255, 255, 0.2);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+}
+
+.sub-title {
+    font-size: 0.9rem;
+}
+.sub-title-desc {
+    font-size: 1.1rem;
+}
+.sub-title-desc-1 {
+    font-size: 1rem;
+}
+
+.social-icon {
+    font-size: 20px;
+    color: white;
+    cursor: pointer;
+    transition: color 0.3s ease;
+}
+
+
+.text-white-50 {
+    color: rgba(255, 255, 255, 0.5);
+}
+
+/* Línea a la izquierda del texto */
+.social-line {
+    width: 30px;
+    height: 2px;
+    background-color: rgba(255, 255, 255, 1);
+}
+
+/* Fondo cuadrado con bordes redondeados */
+.social-icon-bg {
+    width: 47px;
+    height: 47px;
+    border-radius: 8px;
+    background-color: rgba(255, 255, 255, 0.1);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+/* Estilo de los íconos */
+.social-icon {
+    font-size: 22px;
+    color: white;
+    transition: color 0.3s ease;
+}
+
+
+.mt-6 {
+    margin-top: 5rem !important;
+}

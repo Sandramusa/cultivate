@@ -1,0 +1,54 @@
+.header-section {
+    width: 100vw; /* Ancho total de la ventana */
+    height: 40vh; /* Altura ajustada al 40% de la ventana */
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    padding-left: 50px;
+    box-sizing: border-box;
+    overflow: hidden; /* Evita el desbordamiento horizontal */
+}
+
+.header-content {
+    max-width: 600px; /* Limita el ancho del contenido */
+    box-sizing: border-box;
+}
+
+.header-title {
+    font-size: 60px;
+    font-weight: bold;
+    color: white;
+    text-transform: uppercase;
+    background-color: rgba(93, 37, 58, 0.8); /* Fondo semitransparente */
+    padding: 5px;
+    margin: 0;
+    line-height: 1;
+    display: inline-block; /* Evita que el texto se expanda más allá del fondo */
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'SF Pro Display', sans-serif;
+    overflow-x: hidden; /* Evita el scroll horizontal */
+}
+
+/* Media query para pantallas pequeñas (mobile) */
+@media (max-width: 768px) {
+    .header-section {
+        height: 50vh; /* Ajusta la altura en dispositivos móviles */
+        padding-left: 20px; /* Reduce el padding a los lados */
+    }
+
+    .header-title {
+        font-size: 40px; /* Disminuye el tamaño de la fuente en dispositivos móviles */
+        padding: 8px;
+    }
+
+    .header-content {
+        max-width: 90%; /* Aumenta el máximo ancho del contenido */
+    }
+}

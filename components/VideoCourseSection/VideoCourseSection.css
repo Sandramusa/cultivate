@@ -1,0 +1,139 @@
+/* Título principal */
+.video-title {
+  font-size: 3.5rem;
+  font-weight: bold;
+  margin-bottom: 20px;
+  line-height: 0.9;
+  color: #004d1a;
+}
+
+.video-title .highlight {
+  display: inline-block;
+  background-color: #004d1a;
+  color: white;
+  padding: 5px 5px 0  0;
+  border-radius: 0%;
+}
+
+
+/* Caja de información con fondo y sombra */
+.info-box {
+  width: 70%;
+  background-color: #F2F2E8; /* Color de fondo */
+  padding: 20px;
+  border-radius: 10px; /* Bordes redondeados */
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Sombra ligera */
+  font-family: 'Lato', sans-serif;
+}
+
+/* Título dentro de la caja */
+.info-box h4 {
+  font-size: 1.2rem;
+  margin-bottom: 10px;
+  color: #222; /* Color oscuro para mejor contraste */
+}
+
+/* Texto dentro de la caja */
+.info-box p {
+  font-size: 1rem;
+  line-height: 1.6;
+  color: #444; /* Texto más legible */
+}
+
+/* Icono de reproducción encima de la imagen */
+.play-icon {
+  width: 250px;
+  height: 250px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2);
+  transition: transform 0.2s ease-in-out;
+}
+
+.play-icon:hover {
+  transform: scale(1.1); /* Efecto al pasar el mouse */
+}
+
+.play-button-img {
+  width: 200px;
+  height: 200px;
+  filter: drop-shadow(2px 2px 5px rgba(0, 0, 0, 0.5)); /* Sombras para destacar */
+}
+
+/* Modal personalizado */
+.video-modal .modal-dialog {
+  max-width: 700px;
+}
+
+.video-modal .modal-content-custom {
+  position: relative;
+  background: transparent;
+  border: none;
+  text-align: center;
+}
+
+.video-container {
+  position: relative;
+  width: 100%;
+  padding-bottom: 56.25%; /* 16:9 Aspect Ratio */
+  height: 0;
+  overflow: hidden;
+}
+
+.video-container iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+/* Responsividad */
+@media (max-width: 992px) {
+  .left-col {
+    justify-items: center;
+  }
+  .video-title {
+    font-family: 'Inter!important', system-ui;
+    font-size: 3.5rem;
+    text-align: center;
+  }
+
+  .info-box {
+    text-align: center;
+  }
+
+  .play-icon {
+    width: 50px;
+    height: 50px;
+  }
+
+  .play-icon svg {
+    width: 25px;
+    height: 25px;
+  }
+}
+
+@media (max-width: 768px) {
+  .video-title {
+    font-family: 'Inter!important', system-ui;
+    font-size: 3.5rem;
+  }
+
+  .play-icon {
+    width: 45px;
+    height: 45px;
+  }
+
+  .play-icon svg {
+    width: 22px;
+    height: 22px;
+  }
+}
+@media (max-width: 375px) {
+  .info-box {
+    width: 100%!important;
+  }
+}

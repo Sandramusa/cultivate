@@ -1,0 +1,290 @@
+/* Sección principal (fondo verde oscuro y posible imagen de árboles) */
+.repo-section {
+  background-image: url('../../assets/images/HeaderSection/trees.png');
+  background-repeat: no-repeat;
+  background-position: center bottom;
+  background-size: contain;
+  padding-bottom: 5rem;
+}
+
+
+
+/* Cabecera */
+.repo-header {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: flex-start;
+  width: 90%;
+  max-width: 910px;
+  margin: 0 auto 2rem auto;
+}
+
+/* Default for desktop and above */
+.repo-header-left,
+.repo-header-right {
+  flex: 1 1 300px;
+  margin: 0.5rem;
+}
+
+/* Mobile: Disable flex layout */
+@media (max-width: 768px) {
+
+  .repo-header-left,
+  .repo-header-right {
+    flex: none;
+    /* Remove flex layout */
+    margin: 0;
+    /* Optional: Adjust margin if needed */
+  }
+}
+
+
+/* Título */
+.repo-heading {
+  font-size: 2.5rem!important;
+  line-height: 1.2;
+  margin: 0;
+  font-weight: 700;
+  margin-bottom: 1.5rem!important;
+  text-transform: uppercase;
+
+}
+
+.repo-highlight {
+  background: #ff4c4c;
+  /* color rosa/rojo detrás de "REPOSITORIO" */
+  color: #fff;
+  padding: 5px 5px 0  0!important;
+  margin-right: 0.4rem;
+  font-size: 2.5rem!important;
+  border-radius: 0%;
+  line-height: 1;
+  display: inline-block;
+}
+
+/* Contenedor del carrusel */
+.repo-slider-container {
+  width: 90%;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+/* Contenedor de las tarjetas (grid) */
+.repo-cards-wrapper {
+  display: grid;
+  gap: 8.5rem!important;
+  margin-top: 3rem;
+  justify-items: center;
+}
+
+.repo-card {
+  background-color: #fff;
+  border-radius: 8px;
+  width: 430px;
+  overflow: hidden;
+  color: #333;
+  text-align: left;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  display: flex;
+  flex-direction: column;
+}
+
+.repo-card-image {
+  width: 100%;
+  height: 270px!important; 
+  background-size: cover;
+  background-position: center;
+}
+
+.repo-card-content {
+  padding: 1.5rem;
+}
+
+.repo-card-title {
+  font-size: 24px;
+  margin-bottom: 0.2rem;
+  font-weight: 700;
+  color: #01401C;
+  font-family: 'SF Pro Display';
+}
+
+.repo-card-subtitle {
+  font-size: 1rem;
+  font-weight: 500;
+  color: #666;
+  margin-bottom: 0.8rem;
+  font-family: 'Lato';
+}
+
+.repo-card-description {
+  margin-bottom: 1rem;
+  font-size: 0.95rem;
+  line-height: 1.4;
+  color: #444;
+  font-family: 'Lato';
+}
+
+.repo-button {
+  display: inline-block;
+  background-color: #ff4c4c;
+  color: #01401C;
+  padding: 0.8rem 1.2rem;
+  text-decoration: none;
+  font-weight: 700;
+  transition: background-color 0.3s ease;
+}
+
+.repo-button:hover {
+  background-color: #cc3b3b;
+}
+
+.repo-dots {
+  display: flex;
+  justify-content: center;
+  margin-top: 2rem;
+}
+
+.repo-dot {
+  display: inline-block;
+  width: 10px;
+  height: 10px;
+  margin: 0 4px;
+  background-color: #c4c4c4;
+  border-radius: 50%;
+  cursor: pointer;
+  transition: background-color 0.2s;
+}
+
+.repo-dot.active {
+  background-color: #ff4c4c;
+}
+
+@media (max-width: 768px) {
+  .repo-header {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .repo-cards-wrapper {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (min-width: 768px) {
+  .repo-cards-wrapper {
+    grid-template-columns: repeat(2, 340px);
+  }
+}
+
+
+.repo-cards-wrapper {
+  display: grid;
+  gap: 1.5rem;
+  margin-top: 3rem;
+  justify-content: center;
+  justify-items: center;
+}
+
+@media (max-width: 768px) {
+  .repo-cards-wrapper {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (min-width: 768px) {
+  .repo-cards-wrapper {
+    grid-template-columns: repeat(2, 340px);
+  }
+}
+
+.repo-heading {
+  font-size: 2.5rem;
+  font-weight: 700;
+  color: #fff;
+  line-height: 1.2;
+  margin: 0;
+  text-transform: uppercase;
+
+}
+.repo-highlight {
+  display: inline-block;
+  background-color: #ff4c4c;
+  color: #01401C;
+  padding: 0.2rem 0.5rem;
+  margin-right: 0.3rem;
+}
+
+.repo-section {
+  background-color: #01401C;
+  background-image: url('../../assets/images/HeaderSection/trees.png');
+  background-repeat: no-repeat;
+  background-position: bottom center;
+  background-size: contain;
+  padding: 2rem 1rem;
+  color: #fff;
+  position: relative;
+}
+
+.repo-dots-wrapper {
+  position: relative;
+  height: 100px;
+  background-size: auto!important;
+}
+
+.repo-dots {
+  position: absolute;
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  margin-top: 1rem;
+}
+
+.repo-dot {
+  display: inline-block;
+  width: 10px;
+  height: 10px;
+  margin: 0 4px;
+  background-color: #c4c4c4;
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+.repo-dot.active {
+  background-color: #ff4c4c;
+}
+
+@media (max-width: 768px) {
+  .repo-grid {
+    grid-template-columns: 1fr;
+    text-align: center;
+    gap: 2rem;
+  }
+
+  .repo-title-container {
+    align-items: center;
+    text-align: center;
+  }
+
+  .repo-text {
+    text-align: center;
+    max-width: 100%;
+  }
+
+  .repo-cards-wrapper {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .repo-card {
+    width: 100%;
+    max-width: 350px;
+  }
+}
+
+@media (min-width: 768px) {
+  .repo-cards-wrapper {
+    flex-direction: row;
+    justify-content: center;
+  }
+}

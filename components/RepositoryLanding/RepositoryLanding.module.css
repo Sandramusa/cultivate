@@ -1,0 +1,89 @@
+.repositoryContent {
+    color: #333;
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 5.5rem;
+}
+
+.hero {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.heroImage {
+    width: 100%;
+    max-width: 700px;
+}
+
+.sectionTitle {
+    font-size: 22px;
+    font-weight: bold;
+    color: #1D4D2C;
+    margin-top: 20px;
+}
+
+.repositoryText {
+    font-size: 16px;
+    line-height: 1.6;
+}
+
+.buttonContainer {
+    text-align: center;
+    margin-top: 30px;
+}
+
+.downloadButton {
+    background-color: #1D4D2C;
+    color: white;
+    padding: 12px 20px;
+    font-size: 16px;
+    border: none;
+    cursor: pointer;
+}
+
+.downloadButton:hover {
+    background-color: #2E7031;
+}
+.imageContainer {
+    width: 100%;
+    max-width: 800px; /* Máximo ancho para pantallas grandes */
+    margin: 0 auto; /* Centrar */
+  }
+  
+  .heroImage {
+    width: 100%;
+    height: auto;
+    border-radius: 10px; /* Bordes redondeados opcional */
+  }
+  
+
+  /* RESPONSIVE: Ajustes para móviles */
+.videoContainer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  max-width: 800px; /* Máximo ancho en pantallas grandes */
+  margin: 0 auto;
+  padding: 10px;
+}
+
+.videoContainer iframe {
+  width: 100%;
+  max-width: 800px; /* Controlar el tamaño máximo */
+  height: 400px;
+  border-radius: 10px; /* Bordes redondeados opcional */
+}
+
+/* RESPONSIVE: Ajuste en móviles */
+@media (max-width: 768px) {
+  .videoContainer {
+    width: 100%;
+    padding: 10px;
+  }
+
+  .videoContainer iframe {
+    width: auto;
+    height: 300px; /* Reducir altura en móviles */
+  }
+}

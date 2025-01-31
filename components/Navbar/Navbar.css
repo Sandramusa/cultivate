@@ -1,0 +1,154 @@
+/* Navbar general */
+#navbar {
+    background-color: #004d1a;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+}
+.navbar-h .navbar-links {
+    display: flex;
+    gap: 20px;
+    transition: transform 0.3s ease;
+    padding-top: 1.3rem!important;
+    padding-bottom: 1.3rem!important;
+}
+.navbar-h .navbar-links a {
+    color: rgba(255, 255, 255, 0.6); /* Blanco con 60% de opacidad */
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 0.9rem;
+    text-transform: uppercase;
+    padding: 10px 15px;
+    transition: color 0.3s ease;
+}
+.navbar-logo img {
+    width: 65%;
+    height: auto;
+}
+
+.navbar-link.active, .contacto-button.active {
+    color: white!important;
+}
+
+/* Enlaces en el menú lateral */
+.side-menu .navbar-links a {
+    color: rgba(255, 255, 255, 0.6);
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 1rem;
+    text-transform: uppercase;
+    padding: 10px 15px;
+    transition: color 0.3s ease;
+}
+
+.side-menu .navbar-links a.active {
+    color: white;
+}
+/* Botón del menú hamburguesa */
+.hamburger-menu {
+    display: none;
+    flex-direction: column;
+    gap: 5px;
+    background: none;
+    border: none;
+    cursor: pointer;
+}
+
+.hamburger-menu .line {
+    width: 25px;
+    height: 3px;
+    background-color: white;
+}
+
+/* Menú lateral deslizante */
+.side-menu {
+    position: fixed;
+    top: 0;
+    right: -100%;
+    width: 300px;
+    height: 100vh;
+    background-color: #004d1a;
+    padding: 20px;
+    box-shadow: -2px 0 5px rgba(0, 0, 0, 0.5);
+    transition: right 0.3s ease;
+    z-index: 1100;
+    overflow-y: auto;
+}
+
+.side-menu.open {
+    right: 0;
+}
+
+/* Botón de cierre del menú lateral */
+.close-button {
+    align-self: flex-end;
+    font-size: 30px;
+    background: none;
+    border: none;
+    color: white;
+    cursor: pointer;
+    margin-bottom: 20px;
+}
+
+/* Estilo de los enlaces del menú lateral */
+.side-menu .navbar-links {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+/* Botón de contacto */
+.contacto-button {
+    background-color: #5d253a;
+    padding: 10px 20px;
+    color: white;
+    font-weight: bold;
+    text-transform: uppercase;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+.contacto-button:hover {
+    background-color: #8a002f;
+}
+
+/* Fondo sombreado cuando el menú está abierto */
+.overlay {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background-color: rgba(0, 0, 0, 0.5);
+    z-index: 1000;
+    transition: opacity 0.3s ease;
+    opacity: 0;
+}
+
+.overlay.open {
+    display: block;
+    opacity: 1;
+}
+
+/* Responsividad */
+
+@media (max-width: 1372px) {
+    .navbar-h .navbar-links {
+        display: none; /* Ocultar menú horizontal */
+    }
+
+    .hamburger-menu {
+        display: flex; /* Mostrar botón hamburguesa */
+    }
+
+
+}

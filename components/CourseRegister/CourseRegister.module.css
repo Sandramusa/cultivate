@@ -1,0 +1,359 @@
+/* 📌 Ajuste del contenedor general */
+.registerContainer {
+    max-width: 850px;
+    /* 🔹 Más ancho */
+    margin: 50px auto;
+    padding: 30px;
+    background-color: #f9f9f9;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+}
+
+/* 📌 Títulos con separación */
+.registerTitle {
+    display: block;
+    font-size: 1.6rem;
+    font-weight: bold;
+    color: #01401C;
+    text-align: center;
+    margin-bottom: 5px;
+}
+
+.courseTitle {
+    display: block;
+    font-size: 1.4rem;
+    font-weight: bold;
+    color: #5D253A;
+    text-align: center;
+    margin-bottom: 25px;
+}
+
+/* 📌 Espaciado general entre filas */
+.form {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+/* 📌 Contenedor de las filas */
+.formRow {
+    display: flex;
+    gap: 20px;
+    justify-content: space-between;
+    align-items: center;
+}
+
+/* 📌 Labels alineados */
+.formRow label {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    font-weight: bold;
+    color: #333;
+    padding-bottom: 5px;
+}
+
+/* 📌 Inputs y selects */
+input,
+select {
+    width: 100%;
+    padding: 12px;
+    margin-top: 5px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 1rem;
+}
+
+/* 📌 Corrección: Región en la misma línea que Tipo de Documento y Número de Documento */
+.formRow select {
+    min-width: 180px;
+    /* 🔹 Evita que el select de región se rompa a otra línea */
+}
+
+/* 📌 Contenedor del teléfono con mejor alineación */
+.phoneContainer {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    width: 100%;
+}
+
+/* 📌 Contenedor del código de país */
+.phoneCodeContainer {
+    display: flex;
+    align-items: center;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    background: #f9f9f9;
+    width: 100px; /* 🔹 Espacio suficiente */
+    justify-content: space-evenly;
+    padding: 5px;
+}
+
+/* 📌 Bandera correctamente alineada */
+.flag {
+    width: 50%;
+    height: 50%;
+ 
+}
+
+/* 📌 Código del país dentro del dropdown */
+.phoneCodeSelect {
+    border: none;
+    background: none;
+    font-size: 14px;
+    cursor: pointer;
+    text-align: center;
+    width: 50px; /* 🔹 Ahora el código es visible */
+    appearance: none; /* 🔹 Oculta el diseño nativo en algunos navegadores */
+    min-width: 62px!important;
+}
+
+/* 📌 Input del número */
+.phoneInput {
+    flex-grow: 1;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 1rem;
+}
+
+
+
+/* 📌 Botón centrado */
+.buttonContainer {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+.submitButton {
+    background-color: #01401C;
+    color: white;
+    padding: 14px 35px;
+    font-size: 1rem;
+    border: none;
+    cursor: pointer;
+    text-transform: uppercase;
+    font-weight: bold;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: fit-content;
+}
+
+.submitButton:hover {
+    background-color: #2E7031;
+}
+
+/* 📌 Banner */
+.banner {
+    background-size: cover;
+    background-position: center;
+    height: 250px;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    position: relative;
+    padding-left: 40px;
+}
+
+/* 📌 Overlay */
+.banner::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.7);
+}
+
+/* 📌 Contenido del banner */
+.bannerContent {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    color: white;
+    max-width: 80%;
+    text-align: left;
+}
+
+/* 📌 Modal */
+.modalOverlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+}
+
+.modal {
+    background: white;
+    padding: 20px;
+    text-align: center;
+    width: 300px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    border-radius: 8px;
+}
+
+.modal h2 {
+    color: #1D4D2C;
+    font-size: 22px;
+    margin-bottom: 10px;
+}
+
+.modalButton {
+    background-color: #01401C;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+    font-size: 16px;
+    margin-top: 10px;
+}
+
+.modalButton:hover {
+    background-color: #2E7031;
+}
+.submitButton {
+    background-color: #01401C;
+    color: white;
+    padding: 14px 35px;
+    font-size: 1rem;
+    border: none;
+    cursor: pointer;
+    text-transform: uppercase;
+    font-weight: bold;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px; /* 🔹 Espacio entre el texto y la flecha */
+    width: fit-content;
+}
+
+.submitButton:hover {
+    background-color: #2E7031;
+}
+
+/* 📌 Tamaño de la flecha */
+.arrowIcon {
+    font-size: 1.2rem;
+}
+
+/* 📌 Estilos para el botón de regreso */
+.backButton {
+    display: flex;
+    align-items: center;
+    gap: 8px; /* 🔹 Espaciado entre la flecha y el texto */
+    font-size: 16px;
+    font-weight: bold;
+    color: white; /* 🔹 Mantiene el color blanco */
+    text-decoration: none;
+    background: none;
+    border: none;
+    cursor: pointer;
+    transition: opacity 0.3s ease;
+}
+
+/* 📌 Efecto hover */
+.backButton:hover {
+    opacity: 0.8;
+}
+
+/* 📌 Ajuste general para dispositivos móviles */
+@media (max-width: 768px) {
+    .registerContainer {
+        max-width: 90%;
+        padding: 20px;
+    }
+
+    /* 📌 Cambia la disposición de las filas a una columna */
+    .formRow {
+        flex-direction: column;
+        gap: 10px; /* 🔹 Menos espacio entre los elementos */
+    }
+
+    /* 📌 Asegura que los inputs ocupen el 100% */
+    .formRow label {
+        width: 100%;
+    }
+
+    input,
+    select {
+        width: 100%;
+    }
+
+    /* 📌 Ajuste de teléfono en móviles */
+    .phoneContainer {
+        flex-direction: column;
+        gap: 5px;
+    }
+
+    .phoneCodeContainer {
+        width: 100%;
+        justify-content: center;
+    }
+
+    .phoneInput {
+        width: 100%;
+    }
+
+    /* 📌 Botón de registro centrado */
+    .buttonContainer {
+        display: flex;
+        justify-content: center;
+    }
+
+    .submitButton {
+        width: 100%;
+        text-align: center;
+    }
+}
+/* 📌 Estilos del modal */
+.modalOverlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5); /* 🔹 Fondo oscuro */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1000; /* 🔹 Asegura que esté sobre otros elementos */
+}
+
+.modal {
+    background: white;
+    padding: 20px;
+    text-align: center;
+    width: 300px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    border-radius: 8px;
+}
+
+.modal h2 {
+    color: #1D4D2C;
+    font-size: 22px;
+    margin-bottom: 10px;
+}
+
+.modalButton {
+    background-color: #01401C;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+    font-size: 16px;
+    margin-top: 10px;
+}
+
+.modalButton:hover {
+    background-color: #2E7031;
+}

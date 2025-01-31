@@ -1,0 +1,152 @@
+.repositorySection {
+  padding: 5.5rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.group-description {
+  font-size: 16px;
+  font-weight: 400;  /* Letra normal */
+  color: #333;  /* Ajusta el color según el diseño deseado */
+  margin-top: 20px;
+  line-height: 1.5;
+  margin-bottom: 3rem;
+}
+
+.group-description strong {
+  font-weight: 600; /* Negrita solo para la pregunta */
+
+}
+
+.cardImage {
+  width: 100%;            /* Asegura que la imagen ocupe todo el ancho de su contenedor */
+  height: auto;           /* Mantiene la relación de aspecto de la imagen */
+  object-fit: cover;      /* Hace que la imagen cubra el área del contenedor sin distorsionarse */
+}
+
+.filtersContainer {
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+  margin-bottom: 3rem;
+  flex-wrap: wrap;
+}
+
+.filterBtn {
+  border: none;
+  padding: 0.5rem 1.2rem;
+  background-color: #A7C0FC;
+  color: #5D253A;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background-color 0.2s ease;
+  text-align: center;
+}
+
+.active {
+  background-color: #6e2251;
+  color: white;
+}
+
+.containerFluid {
+  width: 100%;
+  padding: 0 2rem;
+}
+
+.row {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 2rem;
+}
+
+.card {
+  background-color: #fff;
+  border-radius: 8px 8px 0 0;
+  box-shadow: 0 1px 4px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  width: 35%;
+  text-align: left;
+}
+
+.cardImage {
+  width: 100%;
+  height: 200px;
+  overflow: hidden;
+}
+
+.imageSize {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.cardContent {
+  padding: 1.5rem;
+}
+
+.cardTitle {
+  font-size: 24px;
+  font-weight: bolder;
+  margin-bottom: 0.5rem;
+  color: #6e2251;
+
+  text-transform: uppercase;
+}
+
+.cardDescription {
+  font-size: 0.95rem;
+  color: #555;
+  margin-bottom: 1rem;
+  font-weight: 100;
+}
+
+.primaryButton {
+  background-color: #A7C0FC;
+  color: #5D253A;
+  border: none;
+  padding: 0.6rem 0.9rem;
+  cursor: pointer;
+  font-weight: 600;
+  width: 45%;
+  font-size: 16px;
+  text-align: center;
+
+}
+
+@media (max-width: 768px) {
+  .repositorySection {
+    padding: 2.5rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+  }
+
+  .primaryButton {
+    width: 100%;
+  }
+
+  .filtersContainer {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1rem;
+    width: 100%;
+  }
+
+  .filterBtn {
+    width: 100%;
+    padding: 1rem;
+    text-align: center;
+  }
+
+  .row {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .card {
+    width: 90%;
+  }
+}

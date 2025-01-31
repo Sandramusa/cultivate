@@ -1,0 +1,169 @@
+/* InternalCourses.css */
+.internal-courses-section {
+    padding: 5.5rem;
+    background-color: #fff;
+    text-align: center;
+}
+
+.icourses-title {
+    font-size: 3rem;
+    font-weight: 700;
+    color: #01401C !important;
+    text-align: center;
+    line-height: 1.2;
+
+}
+
+.icourses-title .highlight {
+    color: #01401C;
+    background-color: #DEF2C9;
+    padding: 5px;
+
+}
+
+.icourses-subtitle {
+    font-size: 1rem;
+    margin-top: 1rem;
+    color: #061C3D;
+
+}
+
+.icourses-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 2rem;
+    margin-top: 2rem;
+}
+
+.icourse-card {
+    background-color: #fff;
+    border-radius: 8px 8px 0 0;
+    box-shadow: 0 1px 4px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    transition: transform 0.2s ease;
+    max-width: 350px;
+    width: 100%;
+    text-align: left;
+}
+
+.icourse-card:hover {
+    transform: scale(1.02);
+}
+
+.icourse-image img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+}
+
+.icourse-info {
+    padding: 1rem;
+
+
+}
+
+.icourse-titulo {
+    color: #5D253A;
+    font-weight: 700;
+}
+
+.icourse-texto {
+    color: #061C3D;
+    font-weight: 300;
+}
+
+.icourse-meta {
+    font-size: 0.9rem;
+    color: #061C3D;
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 0.5rem;
+
+}
+.group-description {
+    font-size: 16px;
+    font-weight: 400;  /* Letra normal */
+    color: #333;  /* Ajusta el color según el diseño deseado */
+    margin-top: 20px;
+    line-height: 1.5;
+  }
+  
+  .group-description strong {
+    font-weight: 600; /* Negrita solo para la pregunta */
+  }
+  
+  
+.icourse-button {
+    background-color: #A7C0FC;
+    color: #5D253A;
+    padding: 0.7rem 1.2rem;
+    border: none;
+    font-weight: 600;
+    cursor: pointer;
+    width: 60%;
+    text-align: center;
+    transition: background-color 0.3s ease;
+}
+
+
+.badge {
+    background-color: #e74c3c;
+    color: white;
+    padding: 0.3rem 0.8rem;
+    font-weight: 700;
+    width: fit-content;
+    font-size: 0.85rem;
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    border-radius: 3px;
+}
+.filters-container {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    margin-bottom: 20px;
+    margin-top: 2rem;
+}
+
+.filter-btn {
+    background: #F2F2E8;
+    border: none;
+    padding: 8px 15px;
+    cursor: pointer;
+    font-size: 14px;
+    transition: 0.3s;
+    
+}
+
+.filter-btn.active {
+    background: #1D4D2C;
+    color: white;
+}
+
+.filter-btn:hover {
+    background: #2E7031;
+    color: white;
+}
+@media (max-width: 768px) {
+    .internal-courses-section {
+        padding: 2.5rem;
+
+        background-color: #fff;
+        text-align: center;
+    }
+
+    .icourses-title {
+        font-size: 1.5rem;
+        font-weight: 700;
+        color: #01401C;
+        text-align: center;
+        line-height: 1.2;
+    }
+
+    .icourses-container {
+        flex-direction: column;
+        align-items: center;
+    }
+}

@@ -1,0 +1,148 @@
+.courseContent {
+    color: #333;
+}
+
+/* Sección Hero */
+.hero {
+    position: relative;
+    width: 100%;
+    height: 400px; /* Ajusta la altura según lo necesites */
+    overflow: hidden;
+}
+
+.heroImage {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* Esto asegura que la imagen cubra el contenedor sin distorsión */
+    object-position: center; /* Esto asegura que la imagen se centra correctamente */
+}
+
+
+.heroOverlay {
+    position: absolute;
+    top: 50%;
+    left: 5%;
+    transform: translateY(-50%);
+    text-align: left;
+    color: white;
+    width: 50%;
+}
+
+.title {
+    font-size: 40px;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+.subtitle{
+color:#01401C;
+
+}
+.description {
+    font-size: 16px;
+    margin-bottom: 15px;
+}
+
+.courseMeta {
+    display: flex;
+    gap: 20px;
+    font-size: 14px;
+}
+
+.courseMeta span {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+
+/* Secciones del contenido */
+.container {
+    max-width: 800px;
+    margin: 40px auto;
+    padding: 0 20px;
+}
+
+.sectionTitle {
+    font-size: 36px;
+    font-weight: bold;
+    margin-bottom: 10px;
+    color: #1D4D2C;
+}
+
+/* Lista de aprendizajes */
+.learnList {
+    display: flex;
+    justify-content: space-between;
+}
+
+.learnList ul {
+    list-style: none;
+    padding: 0;
+}
+
+.learnList li {
+    font-size: 16px;
+    margin-bottom: 8px;
+}
+
+/* Módulos */
+.modules {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.moduleCard {
+    padding: 15px;
+    border-radius: 5px;
+    position: relative;
+    border-color: #D6D6D6;
+    border-style:solid;
+    border-width: 1px;
+}
+
+/* Fondo verde claro detrás del título */
+.moduleCard h3 {
+    font-size: 18px;
+    margin-bottom: 5px;
+    color: #0D0D0D;
+    display: inline-block;
+    padding: 5px 10px;
+    border-radius: 3px;
+}
+
+.moduleCard p {
+    font-size: 14px;
+    color: #808080;
+}
+
+/* Botón */
+.buttonContainer {
+    text-align: center;
+    margin: 30px 0;
+}
+
+.enrollButton {
+    background-color: #1D4D2C;
+    color: white;
+    padding: 12px 20px;
+    font-size: 16px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background 0.3s;
+}
+
+.enrollButton:hover {
+    background-color: #2E7031;
+}
+/* Sección de Módulos */
+/* Estilo solo para el título "Módulos" */
+.modulesTitle {
+    display: inline-block;
+    font-size: 22px;
+    font-weight: bold;
+    color: #01401C;
+    background-color: #DEF2C9; /* Verde claro */
+    padding: 5px 15px;
+    margin-bottom: 10px;
+}

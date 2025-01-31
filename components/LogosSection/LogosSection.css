@@ -1,0 +1,39 @@
+/* Logos Section */
+.ts-logos-section {
+  padding: 2rem;
+  font-family: sans-serif;
+  text-align: center;
+}
+
+.ts-logos-container {
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+  flex-wrap: wrap;
+  align-items: center;
+}
+
+/* Estilos de los logos */
+.ts-logo {
+  width: 9%;
+  height: auto;
+  filter: grayscale(100%) opacity(0.5); /* Desaturación y opacidad */
+  transition: filter 0.3s ease, transform 0.2s ease;
+}
+
+.ts-logo:hover {
+  filter: grayscale(0%) opacity(1); /* Restaurar color y opacidad */
+  transform: scale(1.05); /* Pequeño efecto de agrandamiento */
+}
+
+/* Responsividad para móviles */
+@media (max-width: 768px) {
+  .ts-logos-container {
+    gap: 1rem;
+    justify-content: space-evenly;
+  }
+
+  .ts-logo {
+    max-width: 80px;
+  }
+}

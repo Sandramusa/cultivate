@@ -1,0 +1,194 @@
+/* Sección de cursos */
+.courses-section {
+  background-color: #f2f2e8;
+  padding: 4rem 1rem;
+}
+
+/* Título */
+.courses-title {
+  font-weight: 700;
+  font-size: 3.5rem;
+  color: #5d253a;
+  margin-bottom: 1.5rem;
+}
+
+.courses-title .highlight {
+  display: inline-block;
+  background: #5d253a;
+  color: #fff;
+  padding: 5px 5px 0  0;
+  border-radius: 0%;
+  line-height: 1;
+  display: inline-block;
+}
+/* Párrafo */
+.courses-paragraph {
+  font-size: 1.1rem;
+  color: #555;
+  line-height: 1.5;
+  max-width: 800px;
+  margin: 0 auto 2rem;
+}
+
+/* Contenedor del slider */
+.slider-container {
+  position: relative;
+  width: 100%;
+  overflow: hidden;
+}
+
+/* Flechas de navegación */
+.arrow-buttons-courses {
+  position: absolute;
+  top: -50px;
+  right: 10px;
+  display: flex;
+  gap: 0.5rem;
+}
+
+.arrow-button-courses {
+  background-color: #fff;
+  border: none;
+  border-radius: 15%;
+  font-size: 1.3rem;
+  width: 40px;
+  height: 40px;
+  cursor: pointer;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  transition: background-color 0.3s ease;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.arrow-button-courses:hover {
+  background-color: #f0f0f0;
+}
+
+/* Contenedor de tarjetas */
+.cards-wrapper-courses {
+  display: flex;
+  gap: 2rem; /* Ajustado para evitar demasiada separación */
+  overflow-x: auto;
+  scroll-snap-type: x mandatory;
+  scrollbar-width: none;
+}
+
+.cards-wrapper-courses::-webkit-scrollbar {
+  display: none;
+}
+
+/* Tarjeta */
+.course-card {
+  background-color: #ffffff;
+  border-radius: 8px;
+  width: 400px; /* Aumentado el ancho de las tarjetas */
+  padding-bottom: 1rem;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.07);
+  text-align: left;
+  scroll-snap-align: center;
+}
+
+/* Imagen */
+.course-image {
+  position: relative;
+  height: 180px;
+  overflow: hidden;
+  border-radius: 8px 8px 0 0;
+}
+
+.course-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+/* Badge */
+.badge {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  background-color: #e74c3c;
+  color: #fff;
+  padding: 5px 10px;
+  font-size: 0.8rem;
+  border-radius: 5px;
+}
+
+/* Info */
+.course-info {
+  padding: 1rem;
+}
+
+.course-meta {
+  display: flex;
+  justify-content: space-between;
+  font-size: 0.9rem;
+  color: #061C3D;
+  margin-bottom: 10px;
+}
+
+.course-name {
+  font-size: 1.2rem;
+  font-weight: bold;
+  margin-bottom: 0.5rem;
+  color: #5D253A;
+}
+
+.course-description {
+  font-size: 0.9rem;
+  color: #061C3D;
+  line-height: 1.4;
+  margin-bottom: 1rem;
+}
+
+/* Botón */
+.course-button {
+  padding: 0.8rem 1.2rem;
+  background-color: #A7C0FC;
+  color: #5D253A;
+  border: none;
+  cursor: pointer;
+  font-size: 1rem;
+  font-weight: bold!important;
+
+}
+
+/* Responsividad para dispositivos móviles */
+@media (max-width: 768px) {
+  .courses-title {
+    font-size: 2rem;
+  }
+
+  .arrow-buttons-courses {
+    top: -40px;
+  }
+
+  /* Contenedor de tarjetas en móvil */
+  .cards-wrapper-courses {
+    display: flex;
+    overflow-x: auto;
+    scroll-snap-type: x mandatory; /* Scroll fluido */
+    scrollbar-width: none;
+    justify-content: flex-start; /* Asegura que los cards inicien alineados */
+    scroll-padding: 0 20px; /* Ajusta el padding para mejorar el scroll */
+  }
+
+  .cards-wrapper-courses::-webkit-scrollbar {
+    display: none;
+  }
+
+  /* Tarjetas en móvil */
+  .course-card {
+    flex: 0 0 90vw; /* Cada card ocupa el 90% del viewport */
+    max-width: 320px; /* Ancho máximo para evitar que sea demasiado grande */
+    scroll-snap-align: center; /* Se alinea automáticamente en el centro de la vista */
+    margin: 0 auto; /* Asegura que cada card esté centrado */
+  }
+}
+.arrow-buttons-group-courses {
+  display: flex;
+  justify-content: flex-end;
+  gap: 1rem;
+  margin-bottom: 1rem;
+}
