@@ -1,0 +1,70 @@
+/* src/global.css */
+
+/* ------------------------------
+   1. Reglas @font-face
+   ------------------------------ */
+@font-face {
+    font-family: 'SF Pro Display';
+    src: url('assets/Fonts/SFPRODISPLAYREGULAR.OTF') format('opentype');
+    font-weight: 400;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'SF Pro Display';
+    src: url('assets/Fonts/SFPRODISPLAYBOLD.OTF') format('opentype');
+    font-weight: 700;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Lato';
+    src: url('assets/Fonts/Lato-Regular.ttf') format('truetype');
+    font-weight: 400;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Lato';
+    src: url('assets/Fonts/Lato-Bold.ttf') format('truetype');
+    font-weight: 700;
+    font-style: normal;
+}
+
+/* Inter Bold (texto en negrita) */
+@font-face {
+    font-family: 'Inter';
+    src: url('assets/Fonts/Inter-ExtraBold.ttf') format('truetype');
+    font-weight: 900;
+    font-style: normal;
+}
+
+/* Ajusta las rutas de acuerdo a donde realmente se ubican tus fuentes.
+   Si 'global.css' está en 'src/', y las fuentes en 'src/assets/fonts/',
+   la ruta podría ser: url('./assets/fonts/...') */
+
+/* ------------------------------
+   2. Reglas globales
+   ------------------------------ */
+
+/* Reset / normalización básica (opcional) */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Asignar Lato a todo el body por defecto */
+body {
+    font-family: 'Lato!important', sans-serif;
+    font-weight: 400;
+    background-color: #fff; /* ajusta a tu preferencia */
+    color: #333;
+}
+
+/* Para títulos, usar SF Pro Display */
+h1, h2, h3 .title, .heading {
+    font-family: 'SF Pro Display!important', sans-serif;
+    font-weight: 700;
+}
+  
